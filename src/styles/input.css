@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer utilities {
+    #input {
+        ::webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .calc-row {
+        @apply grid grid-cols-4 items-center gap-[5px] *:text-white *:content-center *:flex *:justify-center *:items-center *:h-[45px] *:rounded-[15px];
+    }
+
+    .num-btn {
+        @apply bg-[#2C2C2C] active:bg-[#3B3B3B] sm:hover:bg-[#313131];
+    }
+
+    .op-btn {
+        @apply bg-[#D04213] active:bg-[#E44D1B] sm:hover:bg-[#E46C44];
+    }
+}

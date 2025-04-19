@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Calculator App" />
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- styles -->
+        <link rel="stylesheet" href="./src/styles/output.css" />
+
+        <title>Calculator</title>
+    </head>
+    <body>
+        <section
+            class="flex justify-center items-center min-h-[100dvh] bg-gray-200 px-2 font-semibold"
+        >
+            <main class="max-w-[240px] p-[15px] bg-[#232323] rounded-[25px]">
+                <header class="flex flex-col gap-[5px]">
+                    <input
+                        type="text"
+                        id="input"
+                        class="w-full p-[10px] apperance-none bg-[#252525] rounded-t-[10px] focus:outline-none border-b border-b-[#5D5D5D] text-white text-xl text-right block"
+                        disabled
+                    />
+                </header>
+                <div class="flex flex-col gap-[5px] mt-6">
+                    <section class="calc-row">
+                        <button
+                            type="button"
+                            class="op-btn col-span-2"
+                            data-action="clear"
+                        >
+                            AC
+                        </button>
+                        <button
+                            type="button"
+                            class="op-btn"
+                            data-action="delete"
+                        >
+                            <img src="./src/img/delete.svg" alt="delete-icon" />
+                        </button>
+                        <button type="button" class="op-btn" value="+">
+                            <img src="./src/img/plus.svg" alt="plus-icon" />
+                        </button>
+                    </section>
+                    <section class="calc-row">
+                        <button type="button" class="num-btn" value="7">
+                            7
+                        </button>
+                        <button type="button" class="num-btn" value="8">
+                            8
+                        </button>
+                        <button type="button" class="num-btn" value="9">
+                            9
+                        </button>
+                        <button type="button" class="op-btn" value="-">
+                            <img src="./src/img/minus.svg" alt="minus-icon" />
+                        </button>
+                    </section>
+                    <section class="calc-row">
+                        <button type="button" class="num-btn" value="4">
+                            4
+                        </button>
+                        <button type="button" class="num-btn" value="5">
+                            5
+                        </button>
+                        <button type="button" class="num-btn" value="6">
+                            6
+                        </button>
+                        <button type="button" class="op-btn" value="*">
+                            <img
+                                src="./src/img/multiply.svg"
+                                alt="multiply-icon"
+                            />
+                        </button>
+                    </section>
+                    <section class="calc-row">
+                        <button type="button" class="num-btn" value="1">
+                            1
+                        </button>
+                        <button type="button" class="num-btn" value="2">
+                            2
+                        </button>
+                        <button type="button" class="num-btn" value="3">
+                            3
+                        </button>
+                        <button type="button" class="op-btn" value="/">
+                            <img
+                                src="./src/img/division.svg"
+                                alt="division-icon"
+                            />
+                        </button>
+                    </section>
+                    <section class="calc-row">
+                        <button
+                            type="button"
+                            class="num-btn col-span-2"
+                            value="0"
+                        >
+                            0
+                        </button>
+                        <button type="button" class="num-btn">.</button>
+                        <button
+                            type="button"
+                            class="op-btn"
+                            data-action="equal"
+                        >
+                            <img src="./src/img/equal.svg" alt="equal-icon" />
+                        </button>
+                    </section>
+                </div>
+            </main>
+        </section>
+    </body>
+    <script src="./src/scripts/script.js"></script>
+</html>
